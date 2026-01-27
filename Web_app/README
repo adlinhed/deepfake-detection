@@ -1,0 +1,2 @@
+To run : "source venv/bin/activate" > "python3 app.py" > press the http link.
+To deactivate enviroment :  "deactivate"
