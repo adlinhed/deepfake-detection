@@ -39,7 +39,7 @@ main/
 │   ├── train                       # Training set
 │   ├── val                         # Validation set
 │   └── README.md                   
-├── notebooks/
+├── notebooks/                      # For models code reference
 │   ├── dataset_preparation.ipynb   # Dataset splitting and validation
 │   ├── mobilenetv2_training.ipynb  # MobileNetV2 training notebook
 │   ├── resnet50_training.ipynb     # ResNet50 training notebook
@@ -47,7 +47,7 @@ main/
 │   └── README.md 
 ├── Web_app/
 │   ├── app.py                      # Flask backend 
-│   ├── models/
+│   ├── models/                     # Keras Models are not available on github, will have to refer to the zip submission on Canvas
 │   │   ├── README.md
 │   │   ├── mobilenet_model.keras   # Trained MobileNetV2 model
 │   │   ├── resnet_model.keras      # Trained ResNet50 model
