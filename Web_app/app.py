@@ -17,7 +17,7 @@ resnet_model = tf.keras.models.load_model("models/resnet_model.keras")
 mobilenet_model = tf.keras.models.load_model("models/mobilenet_model.keras")
 
 
-def prepare_image(image, size, preprocess):
+def prepare_image(image, size, preprocess): # Resize, convert to array, preprocess and add batch dimension
     
     image = image.resize(size)
     image = np.array(image)
@@ -28,7 +28,7 @@ def prepare_image(image, size, preprocess):
 
     return image
 
-def generate_explanation(result, confidence, model_name):
+def generate_explanation(result, confidence, model_name): # Display explanation based on result, confidence and model used
 
     if result == "Fake":
         if confidence >= 90:
@@ -139,10 +139,10 @@ def index():
                 "xception": "Xception"
             }
 
-            if prediction > 0.5:
+            if prediction > 0.5:  # If prediction is greater than 0.5, classify as real
                 result = "Real"
                 confidence = round(prediction * 100, 2)
-            else:
+            else:                 # If prediction is less than or equal to 0.5, classify as fake
                 result = "Fake"
                 confidence = round((1 - prediction) * 100, 2)
 
