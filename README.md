@@ -34,7 +34,7 @@ All three models are trained on the [Yonsei University Real and Fake Face Detect
 
 ```
 main/
-├── data/
+├── data/                           # Data is not available on Github. View Canvas submission for dataset.
 │   ├── test                        # Test set
 │   ├── train                       # Training set
 │   ├── val                         # Validation set
@@ -47,7 +47,7 @@ main/
 │   └── README.md 
 ├── Web_app/
 │   ├── app.py                      # Flask backend 
-│   ├── models/                     # Keras Models are not available on github, will have to refer to the zip submission on Canvas
+│   ├── models/                     # Keras Models are not available on Github. View Canvas submission for keras model.
 │   │   ├── README.md
 │   │   ├── mobilenet_model.keras   # Trained MobileNetV2 model
 │   │   ├── resnet_model.keras      # Trained ResNet50 model
